@@ -1,0 +1,39 @@
+
+.empty
+	height: $footer_height
+
+.footer
+	min-width: $layout_min_width
+	max-width: $layout_max_width
+	margin: -$footer_height auto 0
+	min-height: $footer_height
+	position: relative
+	background: #fff
+	color: $text_color_df
+	font-family: $ff
+	&__wrap
+		
+		position: relative
+	&__logo
+		.logo
+			top: 0
+			bottom: 0
+			margin: auto
+			vertical-align: middle
+			display: block
+	&__copyright
+		margin: 0 auto
+		padding: 11px 0 10px
+		text-align: center
+		font-size: 10px
+		color: $text_color_df
+		font-family: $ff
+		border-top: 1px dashed #d5d5d5
+	.nav
+		&__list
+			margin: auto
+			text-align: center
+			width: 100%
+		&__item
+			display: inline-block
+			margin: 5px 10px

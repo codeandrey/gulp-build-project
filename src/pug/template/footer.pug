@@ -1,0 +1,16 @@
+footer.footer
+	div.container
+		div.row
+			div.footer__wrap
+				div.footer__logo
+					a(href="#").logo
+						img(src="./img/logo.png", alt="logo").logo__pic
+				div.footer__nav
+					nav.nav__list
+						- var navs = ["home", "product", "services", "contact"]
+						for item, i in navs 
+							li.nav__item
+								a(href="#").nav__link #{item}
+	div.container
+		div.row
+			div.footer__copyright all rights reserved 20137

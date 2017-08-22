@@ -1,0 +1,35 @@
+{
+  "name": "hcode",
+  "version": "1.0.0",
+  "description": "OptimizedHTML",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "2.*",
+    "normalize-scss": "normalize.scss#^4.0.3",
+    "normalize.css": "*",
+    "path": "^0.12.7",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "node-bourbon": "^4.2.8",
+    "vinyl-ftp": "^0.5.0"
+  }
+}

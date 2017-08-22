@@ -1,0 +1,26 @@
+div.container
+	div.row
+		div.headerTop
+			span.menu__mobile
+				i.fa.fa-bars
+			div.headerTop__logo
+				a(href="#").logo
+					img(src="./img/logo.png", alt="logo").logo__pic
+			div.headerTop__social
+				ul.social__list 
+					- var menus = [ "fa-facebook", "fa-pinterest", "fa-twitter"];
+					for f_icon, i in menus
+						li.social__item
+							a(href="#").social__link
+								i.fa(class=f_icon)
+		
+				
+		
+div.container
+	div.row
+		div.headerNav
+			nav.menu
+				- var navs = ["home", "product", "services", "contact"]
+				for item, i in navs 
+					li.menu-item
+						a(href="#") #{item}

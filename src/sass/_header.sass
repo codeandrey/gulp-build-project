@@ -1,0 +1,76 @@
+/*_____________    WordPress  Css   ______________*/
+/* __________________   Header  __________________*/
+.menu__mobile
+	display: none
+	+max-screen(768px)
+		display: block
+.headerTop
+	color: white
+	height: 90px
+	position: relative
+	&__social
+		width: 20%
+		float: right
+		right: 0
+		top: 0
+		bottom: 0
+		height: 20px
+		margin: auto
+		display: block
+		position: absolute
+		vertical-align: middle
+.logo
+	display: block
+	max-width: 170px
+	max-height: 85px
+	text-align: center
+	height: 90px
+	margin: auto
+	width: 100%
+	top: 0
+	bottom: 0
+	vertical-align: middle
+	+max-screen(768px)
+		text-align: center
+	&--pic
+		display: block
+		max-width: 100%
+		max-height: 100%
+		margin: auto	
+	&--text
+		color: $text_color
+		font-family: $ff_bold
+		font-size: 16px
+
+	
+.social
+	&__item
+		display: block	
+		float: left
+		margin: 0 5px
+		.fa	
+			font-size: 20px
+
+/* ________________   Header Navigation   _______________*/	
+.menu-container
+
+.menu
+	text-align: center
+	&-item
+		display: inline-block
+		a
+			display: block
+			padding: 3px 15px
+			margin: 10px 8px
+			+border-radius(2px)
+			color: #707070
+			text-decoration: none
+			font-family: $ff
+			font-size: 10px
+			text-transform: uppercase
+			border: 1px solid #045279
+			&:hover, &:active
+				background: #469bbf; 
+				border: 1px solid #045279
+				color: #fff
+				text-decoration: none	

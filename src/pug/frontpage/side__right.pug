@@ -1,0 +1,11 @@
+aside.side_right
+	article.side__arrticle  Lorem ipsum  dolor sit amet, consectetur adipisicing elit. Ea nobis nisi maxime tempore incidunt! 
+	div.service__race
+		-var service_array = [["lLorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laboriosam","icon-Smart"], ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laboriosam","icon-auto"], ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laboriosam","icon-call"], ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laboriosam","icon-phone"], ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laboriosam", "icon-service"]]
+		ul.servise__list
+			for  paragh, i in service_array
+				li.service__item
+					div.service__text #{paragh[0]}
+						a(href="#").service__icon__link More >>
+					div(class=paragh[1]).service__icon 		
+					

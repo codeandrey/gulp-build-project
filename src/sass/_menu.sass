@@ -1,0 +1,87 @@
+/*__________     Mobile menu icon       _____________*/
+.menu__hamburger	
+	display: none 
+	position: relative 
+	overflow: hidden 
+	margin: 0 
+	padding: 0 
+	max-width: 60px 
+	min-width: 60px 
+	width: 100%
+	height: 60px 
+	font-size: 0 
+	text-indent: -9999px 
+	appearance: none 
+	box-shadow: none 
+	border-radius: none 
+	border: none 
+	cursor: pointer 
+	transition: background 0.3s 
+	+max-screen(768px)
+		display: inline-block
+		float: left
+
+ 
+.menu__hamburger:focus	
+	outline: none 
+ 
+.menu__hamburger span	
+	display: block 
+	position: absolute 
+	top: 29px 
+	left: 12px 
+	right: 12px 
+	height: 4px 
+	background: white 
+ 
+.menu__hamburger span::before,
+.menu__hamburger span::after	
+	position: absolute 
+	display: block 
+	left: 0 
+	width: 100% 
+	height: 4px 
+	background-color: #fff 
+	content: "" 
+ 
+.menu__hamburger span::before	
+	top: -15px 
+ 
+.menu__hamburger span::after	
+	bottom: -15px 
+ 
+.menu__hamburger-x	
+	background-color: #ff3264 
+ 
+.menu__hamburger-x span	
+	transition: background 0s 0.3s 
+ 
+.menu__hamburger-x span::before,
+.menu__hamburger-x span::after	
+	transition-duration: 0.3s, 0.3s 
+	transition-delay: 0.3s, 0s 
+ 
+.menu__hamburger-x span::before	
+	transition-property: top, transform 
+ 
+.menu__hamburger-x span::after	
+	transition-property: bottom, transform 
+ 
+/* active state, i.e. menu open */
+.menu__hamburger-x.is-active	
+	background-color: #cb0032 
+ 
+.menu__hamburger-x.is-active span	
+	background: none 
+ 
+.menu__hamburger-x.is-active span::before	
+	top: 0 
+	transform: rotate(45deg) 
+ 
+.menu__hamburger-x.is-active span::after	
+	bottom: 0 
+	transform: rotate(-45deg) 
+
+.menu__hamburger-x.is-active span::before,
+.menu__hamburger-x.is-active span::after	
+	transition-delay: 0s, 0.3s  
